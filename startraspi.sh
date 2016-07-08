@@ -45,7 +45,7 @@ wget -P /etc/ https://raw.githubusercontent.com/stblack/raspwifitotem/master/etc
 mv /etc/dnsmasq.conf /etc/dnsmasq.conf.orig
 wget -P /etc/ https://raw.githubusercontent.com/stblack/raspwifitotem/master/etc/dnsmasq.conf
 mv /etc/network/interfaces /etc/network/interfaces.orig
-wget -P /etc/network https://raw.githubusercontent.com/stblack/raspwifitotem/master/etc/interfaces
+wget -P /etc/network https://raw.githubusercontent.com/stblack/raspwifitotem/master/etc/network/interfaces
 mv /etc/lighttpd.conf /etc/lighttpd.conf.orig
 wget -P /etc/ https://raw.githubusercontent.com/stblack/raspwifitotem/master/etc/lighttpd.conf
 mv /etc/hostapd/hostapd.conf /etc/hostapd.conf.orig
