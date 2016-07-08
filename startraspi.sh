@@ -54,3 +54,11 @@ wget -P /etc/hostapd https://raw.githubusercontent.com/stblack/raspwifitotem/mas
 #aggiungere riga per fare partire in automatico come demone hoatapd
 echo "DAEMON_CONF=\"/etc/hostapd/hostapd.conf\"" >> /etc/default/hostapd
 
+#riavvio servizi
+service networking restart
+systemctl daemon-reload
+service dhcpcd restart
+service lighttpd restart
+service hostapd restart
+service dnsmasq restart
+
