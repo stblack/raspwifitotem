@@ -14,6 +14,9 @@ dpkg-reconfigure tzdata
 #modifica fuso orario
 nano /etc/timezone
 
+#tastiera
+dpkg-reconfigure keyboard-configuration
+
 #correzione frequenza della posta seriale
 echo "#correzione frequenza della posta seriale" >> /boot/config.txt
 echo "core_freq=250" >> /boot/config.txt
