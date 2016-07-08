@@ -24,8 +24,6 @@ echo "core_freq=250" >> /boot/config.txt
 #eliminare dal file /boot/cmdline.txt la parte  : console=serial0,115200
 sed -i "s/console=serial0,115200//g" /boot/cmdline.txt
 
-#TODO aggiungere settaggio tastiera italiana
-
 #aggiornamento  repository raspberry
 apt-get update
 apt-get dist-upgrade -y
