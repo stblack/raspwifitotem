@@ -21,6 +21,8 @@ echo "core_freq=250" >> /boot/config.txt
 #eliminare dal file /boot/cmdline.txt la parte  : console=serial0,115200
 sed -i "s/console=serial0,115200//g" /boot/cmdline.txt
 
+#TODO aggiungere settaggio tastiera italiana
+
 #aggiornamento  repository raspberry
 apt-get update
 apt-get dist-upgrade -y
@@ -32,10 +34,6 @@ apt-get -y install dnsmasq hostapd putty lighttpd php5 sqlite3 php5-common php5-
 lighty-enable-mod fastgci
 lighty-enable-mod fastcgi-php
 /etc/init.d/lighttpd force-reload
-
-#copio i file di configurazione prima di scaricare la configurazione da github
-mv /etc/hosts /etc/hosts.orig
-wget -P /etc/ https://raw.githubusercontent.com/stblack/raspwifitotem/master/etc/hosts
 
 #copio i file di configurazione prima di scaricare la configurazione da github
 mv /etc/hosts /etc/hosts.orig
