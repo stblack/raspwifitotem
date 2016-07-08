@@ -45,7 +45,7 @@ wget -P /etc/ https://raw.githubusercontent.com/stblack/raspwifitotem/master/etc
 mv /etc/network/interfaces /etc/network/interfaces.orig
 wget -P /etc/network https://raw.githubusercontent.com/stblack/raspwifitotem/master/etc/network/interfaces
 mv /etc/lighttpd.conf /etc/lighttpd.conf.orig
-wget -P /etc/ https://raw.githubusercontent.com/stblack/raspwifitotem/master/etc/lighttpd.conf
+wget -P /etc/ https://raw.githubusercontent.com/stblack/raspwifitotem/master/etc/lighttpd/lighttpd.conf
 mv /etc/hostapd/hostapd.conf /etc/hostapd.conf.orig
 wget -P /etc/hostapd https://raw.githubusercontent.com/stblack/raspwifitotem/master/etc/hostapd/hostapd.conf
 
