@@ -49,7 +49,10 @@ wget -P /etc/network https://raw.githubusercontent.com/stblack/raspwifitotem/mas
 mv /etc/lighttpd.conf /etc/lighttpd.conf.orig
 wget -P /etc/ https://raw.githubusercontent.com/stblack/raspwifitotem/master/etc/lighttpd.conf
 mv /etc/hostapd/hostapd.conf /etc/hostapd.conf.orig
-wget -P /etc/hostapd https://raw.githubusercontent.com/stblack/raspwifitotem/master/hostapd/hostapd.conf
+wget -P /etc/hostapd https://raw.githubusercontent.com/stblack/raspwifitotem/master/etc/hostapd/hostapd.conf
+
+#Pagina per bypassare la ricerca del server google in background dentro android 6 
+wget -P /etc/lighttpd https://raw.githubusercontent.com/stblack/raspwifitotem/master/generate_204.php
 
 #aggiungere riga per fare partire in automatico come demone hoatapd
 echo "DAEMON_CONF=\"/etc/hostapd/hostapd.conf\"" >> /etc/default/hostapd
