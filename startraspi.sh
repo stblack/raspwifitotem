@@ -77,15 +77,14 @@ wget -P /var/www/html/ https://raw.githubusercontent.com/stblack/raspwifitotem/m
 echo -e "\n************************************************************"
 echo "Aggiungo riga per fare partire in automatico come demone hostapd"
 echo "DAEMON_CONF=\"/etc/hostapd/hostapd.conf\"" >> /etc/default/hostapd
-if grep -Fxq "DAEMON_CONF=\"/etc/hostapd/hostapd.conf\" /etc/default/hostapd
+if grep -Fxq "DAEMON_CONF=\"/etc/hostapd/hostapd.conf\"" /etc/default/hostapd
 then
         # code if found
         echo "Modifica già fatta"
 else
         # code if not found
-        echo "DAEMON_CONF=\"/etc/hostapd/hostapd.conf\" >> /etc/default/hostapd
+        echo "DAEMON_CONF=\"/etc/hostapd/hostapd.conf\"" >> /etc/default/hostapd
 fi
-
 
 echo -e "************************************************************"
 echo "Riavvio finale dei servizi"
