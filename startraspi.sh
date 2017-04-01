@@ -2,7 +2,7 @@
 
 # funzione per controllare se un per corso esiste
 function validate_url(){
-  if [[ S(wget -S --spider $1  2>&1 | grep 'HTTP/1.1 200 OK') ]]; then echo "true"; fi
+  if [[ $(wget -S --spider $1  2>&1 | grep 'HTTP/1.1 200 OK') ]]; then echo "true"; fi
 }
 
 # variabile per contare i passi di configurazione
